@@ -27,3 +27,11 @@ arr.forEach(obj => {
 });
 
 console.log(trustedEmails); 
+
+console.log('-------------------------------------------------'); 
+
+const email2Regex = /^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*@(gmail|yahoo)\.com$/; 
+// доп варіант, якщо ми не хочемо, щоб адреса починалась із крапки, але могла її включати. звернемось до об'єкту 3
+
+const isValidEmail = emailRegex.test(arr[2].email); 
+console.log(isValidEmail);
